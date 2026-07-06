@@ -1,0 +1,24 @@
+# Env
+.env
+*.env
+!*.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Workspace / generated artifacts
+backend/workspace/
+backend/artifacts/
+*.log
+
+# OS
+.DS_Store
