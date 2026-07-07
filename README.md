@@ -2,12 +2,7 @@
 
 **Kaggle AI Agents: Intensive Vibe Coding Capstone — Agents for Business**
 
-This is the **Phase 1 architectural foundation** for a production-ready, modular multi-agent
-SDLC platform. It intentionally implements *scaffolding, contracts, and a working thin
-slice* (Router → selected agents → structured JSON → dashboard) rather than every feature —
-Phase 2 will fill in deeper agent behaviors, persistence, and auth.
-
-## Why this architecture
+FlowForge AI is an intelligent multi-agent platform that orchestrates the entire Software Development Lifecycle—from planning and architecture to implementation, testing, and documentation—using specialized AI agents, intelligent routing, and MCP-powered tools while optimizing for free-tier LLMs.
 
 - **Router-first, lazy execution.** Every request goes through the `RouterAgent`, which uses
   free keyword heuristics (zero LLM cost) and only escalates to a single cheap LLM
