@@ -207,7 +207,7 @@ The platform provides an interactive dashboard that enables users to monitor the
 
 The dashboard serves as the primary interface where users submit software development requests, monitor execution progress, and view overall workflow status together with token usage statistics.
 
-> **Screenshot:** `<img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/9a3f07bb-8598-4db1-8a5e-1e4cd91f5916" />
+> **Screenshot:** <img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/9a3f07bb-8598-4db1-8a5e-1e4cd91f5916" />
 `
 
 ---
@@ -216,7 +216,7 @@ The dashboard serves as the primary interface where users submit software develo
 
 The workflow view illustrates the execution pipeline selected by the Router Agent. Based on the complexity of the request, only the required agents are executed, demonstrating intelligent routing and token-efficient orchestration.
 
-> **Screenshot:** `<img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/a0998da2-d74c-47f9-aa05-ce93b823a7b2" />
+> **Screenshot:** <img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/a0998da2-d74c-47f9-aa05-ce93b823a7b2" />
 `
 
 ---
@@ -234,7 +234,7 @@ Each completed workflow produces reusable artifacts such as project plans, requi
 
 The logs panel provides detailed runtime information including agent execution events, MCP tool invocations, provider switching, retries, and debugging information, enabling complete observability of the workflow.
 
-> **Screenshot:** `<img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/7214dcca-d4f0-47df-9ed3-9feec9c0b3fa" />
+> **Screenshot:** <img width="2940" height="1664" alt="image" src="https://github.com/user-attachments/assets/7214dcca-d4f0-47df-9ed3-9feec9c0b3fa" />
 `
 
 ## Getting started
