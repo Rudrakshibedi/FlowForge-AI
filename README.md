@@ -4,6 +4,29 @@
 
 FlowForge AI is an intelligent multi-agent platform that orchestrates the entire Software Development Lifecycle—from planning and architecture to implementation, testing, and documentation—using specialized AI agents, intelligent routing, and MCP-powered tools while optimizing for free-tier LLMs.
 
+## Problem Statement
+
+Modern software development involves multiple specialized roles such as planning, requirement analysis, architecture design, implementation, testing, code review, and documentation. Existing AI coding assistants typically rely on a single large language model to perform all these responsibilities, resulting in longer prompts, higher token consumption, and limited modularity.
+
+This project addresses that challenge by building a production-oriented multi-agent Software Development Lifecycle (SDLC) platform where specialized AI agents collaborate through structured workflows. Each agent focuses on a single responsibility, enabling better scalability, improved maintainability, lower token usage, and clearer execution pipelines.
+
+## Why Multi-Agent Systems?
+
+Software development is naturally collaborative, involving multiple specialized roles. Instead of relying on one general-purpose LLM, this platform divides the workflow into dedicated AI agents:
+
+- Router selects only the required agents.
+- Planner creates the execution strategy.
+- Product Manager generates user requirements.
+- Architect designs the system.
+- Developer produces the implementation.
+- Reviewer validates quality.
+- Tester generates testing plans.
+- Documentation creates project documentation.
+
+Each agent performs exactly one LLM call and receives only summarized context from upstream agents, reducing token usage while improving modularity, explainability, and scalability.
+
+# Key Features
+
 - **Router-first, lazy execution.** Every request goes through the `RouterAgent`, which uses
   free keyword heuristics (zero LLM cost) and only escalates to a single cheap LLM
   classification call when the request is ambiguous. Most requests never trigger the full
@@ -17,6 +40,9 @@ FlowForge AI is an intelligent multi-agent platform that orchestrates the entire
 - **Gemini primary / Groq fallback.** `services/llm_service.py` is the single call site for
   all LLM traffic: it tries Gemini Flash first, falls back to Groq on failure, caches
   identical calls, and records token usage per task.
+
+# Architecture
+
 
 ## Folder structure
 
