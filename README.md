@@ -195,8 +195,8 @@ ai-agent-platform/
 │   ├── .env.example
 │   └── Dockerfile
 ├── docker-compose.yml
-├── ARCHITECTURE.md        # Mermaid diagrams
-└── README.md
+├── ARCHITECTURE.md
+└── README.md       
 ```
 
 # Demo
